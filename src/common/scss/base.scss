@@ -1,0 +1,92 @@
+@media (-webkit-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5) {
+    .border-1px{
+        &:after{
+            -webkit-transform: scaleY(.7);
+            transform: scaleY(.7);
+        }
+    }
+    .borderRight-1px{
+        &:after{
+            -webkit-transform: scaleX(.7);
+            transform: scaleX(.7);
+        }
+    }
+    .double-1px{
+        &:after,&:before{
+            -webkit-transform: scaleY(.7);
+            transform: scaleY(.7);
+        }
+    }
+    .borderAll-1px:after{
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 2),(min-device-pixel-ratio: 2) {
+    .border-1px{
+        &:after{
+            -webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+        }
+    }
+    .borderRight-1px{
+        &:after{
+            -webkit-transform: scaleX(.5);
+            transform: scaleX(.5);
+        }
+    }
+    .double-1px{
+        &:after,&:before{
+            -webkit-transform: scaleY(.5);
+            transform: scaleY(.5);
+        }
+    }
+    .borderAll-1px:after{
+        width: 200%;
+        height: 200%;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+    }
+}
+
+@media (-webkit-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+    .border-1px{
+        &:after{
+            -webkit-transform: scaleY(.3);
+            transform: scaleY(.3);
+        }
+    }
+    .borderRight-1px{
+        &:after{
+            -webkit-transform: scaleX(.3);
+            transform: scaleX(.3);
+        }
+    }
+    .double-1px{
+        &:after,&:before{
+            -webkit-transform: scaleY(.3);
+            transform: scaleY(.3);
+        }
+    }
+    .borderAll-1px:after{
+        width: 250%;
+        height: 250%;
+        transform: scale(0.4);
+        transform-origin: 0 0;
+    }
+}
+
+
+body{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 200;
+    font-family: 'PingFang SC','STHeitiSC-Light', 'Helvetica-Light', arial;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { clear: both; zoom: 1; overflow: hidden }
